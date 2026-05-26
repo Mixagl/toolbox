@@ -14,7 +14,7 @@ export default function Header() {
         </Link>
 
         <a
-          href="https://t.me/your_username"
+          href="https://t.me/mixagl"
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 rounded-full border border-neutral-700 bg-neutral-900 px-4 py-2 text-sm font-medium text-neutral-300 transition-all hover:border-neutral-600 hover:bg-neutral-800 hover:text-white"

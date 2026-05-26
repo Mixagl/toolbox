@@ -1,9 +1,23 @@
+import Link from "next/link";
+import { ReactNode } from "react";
+
 export default function Tools() {
-  const tools = [
+  interface ToolCard {
+    title: string;
+    description: string;
+    icon: ReactNode;
+    href: string;
+    gradient: string;
+    iconBg: string;
+    iconColor: string;
+  }
+
+  const tools: ToolCard[] = [
     {
       title: "Конвертер цветов",
       description:
         "Мгновенный перевод HEX в RGB и обратно. Выбери цвет и скопируй код.",
+      href: "/tools/color-converter",
       icon: (
         <svg
           width="24"
@@ -28,6 +42,7 @@ export default function Tools() {
       title: "Счётчик символов",
       description:
         "Узнай длину текста, количество слов и предложений. Для постов, эссе и ТЗ.",
+      href: "/tools/char-counter",
       icon: (
         <svg
           width="24"
@@ -54,6 +69,7 @@ export default function Tools() {
       title: "Генератор паролей",
       description:
         "Создай надёжный пароль любой длины. С цифрами, спецсимволами и заглавными буквами.",
+      href: "/tools/password-generator",
       icon: (
         <svg
           width="24"
@@ -78,6 +94,7 @@ export default function Tools() {
       title: "Форматировщик JSON",
       description:
         "Преврати сжатый JSON в читаемый вид. С подсветкой синтаксиса и копированием в один клик.",
+      href: "/tools/json-formatter",
       icon: (
         <svg
           width="24"
@@ -105,7 +122,8 @@ export default function Tools() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {tools.map((tool) => (
-            <div
+            <Link
+              href={tool.href}
               key={tool.title}
               className="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 transition-all hover:border-neutral-700 hover:bg-neutral-900/80 hover:-translate-y-1"
             >
@@ -128,7 +146,7 @@ export default function Tools() {
                   {tool.description}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

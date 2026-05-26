@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const inter = Inter({
   subsets: ["cyrillic", "latin"],
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-neutral-950">
         <Header />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>

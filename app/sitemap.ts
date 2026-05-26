@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://toolbox-wheat-psi.vercel.app";
+  const baseUrl = "https://toolbox-mixagl.vercel.app";
 
   const staticRoutes = [
     {

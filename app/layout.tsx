@@ -46,6 +46,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-neutral-950">
         <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   );

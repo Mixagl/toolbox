@@ -2,10 +2,11 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 pt-16 sm:px-6 lg:px-8">
+    <section className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-4 pt-16 sm:px-6 lg:px-8">
+      {/* Фоновые эффекты */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-1/2 h-125 w-125 -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-800/50 blur-3xl" />
-        <div className="absolute left-1/4 top-1/4 h-75 w-75 rounded-full bg-neutral-700/30 blur-3xl" />
+        <div className="absolute left-1/2 top-1/2 h-75 w-75 -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-800/50 blur-3xl sm:h-100 sm:w-100 lg:h-125 lg:w-125" />
+        <div className="absolute left-1/4 top-1/4 h-37.5 w-37.5 rounded-full bg-neutral-700/30 blur-3xl sm:h-50 sm:w-50 lg:h-75 lg:w-75" />
       </div>
 
       <div className="mx-auto max-w-3xl text-center">
@@ -37,7 +38,6 @@ export default function Hero() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="transition-transform group-hover:translate-x-1"
             >
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />

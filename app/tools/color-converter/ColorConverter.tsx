@@ -93,7 +93,7 @@ export default function ColorConverter() {
           <label className="mb-2 block text-sm font-medium text-neutral-400">
             HEX
           </label>
-          <div className="flex gap-3">
+          <div className="flex gap-3 flex-wrap">
             <input
               type="text"
               value={hex}

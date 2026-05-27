@@ -115,6 +115,32 @@ export default function Tools() {
       iconBg: "bg-orange-500/10",
       iconColor: "text-orange-400",
     },
+    {
+      title: "Конвертер единиц",
+      description:
+        "Мгновенный перевод между px, rem, em и pt. Для верстальщиков и дизайнеров.",
+      href: "/tools/unit-converter",
+      icon: (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <line x1="4" y1="9" x2="20" y2="9" />
+          <line x1="4" y1="15" x2="20" y2="15" />
+          <line x1="10" y1="3" x2="8" y2="21" />
+          <line x1="16" y1="3" x2="14" y2="21" />
+        </svg>
+      ),
+      gradient: "from-amber-500/20 to-yellow-500/20",
+      iconBg: "bg-amber-500/10",
+      iconColor: "text-amber-400",
+    },
   ];
 
   return (

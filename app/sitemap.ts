@@ -29,6 +29,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/tools/unit-converter`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
   ];
 
   return [...staticRoutes];
